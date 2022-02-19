@@ -61,7 +61,12 @@ public class TechJobs {
                 String searchTerm = in.nextLine();
 
                 if (searchField.equals("all")) {
-                    System.out.println("Search all fields not yet implemented.");
+
+                    //*****************************************
+                    // This is where i want to call findByValue
+                    run? findbyValue? // confused about calling a method here. what is the java go command?
+                }
+                    System.out.println(fields);
                 } else {
                     printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
                 }
@@ -110,7 +115,18 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
+      if (printJobs.isNotEmpty()){
+                for (String choiceKeys : Hashmap choiceKey, String columnChoice : Hashmap columnChoices )
+                return System.out.println ("");
+                //need to iterate over an this array
+                   // accumulator is for (int i=0, i<input.length, ++i) {}
+                    // what am i accumulating? jobs[i]? or is this unnessesary since choice key already does this
+                // structure for the format task one wants:
+          for each returned Job in ArrayList of someJobs:
+          System.out.print( "******" +\n"choiceKey[i?] : columnchoices[i?]"+\n"******");
+                  //^so that if more keys are entered for categries of info-this works over hard coding it
 
-        System.out.println("printJobs is not implemented yet");
+
+    else System.out.println("printJobs is not implemented yet");
     }
 }
